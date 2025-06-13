@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@plugin "tailwindcss-motion";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -49,9 +51,9 @@
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --popover: oklch(58.292% 0.00007 271.152);
+  --popover-foreground: oklch(0% 0 0);
+  --primary: #7755cc;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -83,9 +85,9 @@
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
+  --popover: oklch(44.683% 0.00129 15.032);
+  --popover-foreground: oklch(0% 0 0);
+  --primary: #7755cc;
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -119,4 +121,11 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }

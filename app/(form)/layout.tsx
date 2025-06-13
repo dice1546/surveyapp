@@ -5,11 +5,13 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-export const FormLayout = ({ children }: LayoutProps) => {
+const FormLayout = ({ children }: LayoutProps) => {
   return (
-    <div>
+    <div className="h-screen w-full">
       <Header />
       {children}
     </div>
   );
 };
+
+export default FormLayout
