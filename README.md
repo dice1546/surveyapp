@@ -29,6 +29,14 @@ CREATE TABLE form_submissions (
 );
 ```
 
+You will also need the Project APIs from the Supabase Dashboard in order to connect with Supabase
+
+```
+NEXT_PUBLIC_SUPABASE_URL=...
+NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+```
+
+
 ### **Detail Description**
 This project was built using React and its ecosystem based libraries.
 Following tech stack was used-
